@@ -98,3 +98,5 @@ if args.context == "movies":
         movies = find("movies", movieId)
         for movie in movies:
             printMovie(movie)
+    if args.action == "insert":
+        insertMovie('movies', args.title, args.duration, args.original_title, args.release_date, args.rating)
